@@ -3,6 +3,10 @@ local astro_utils = require "astronvim.utils"
 local mappings = {
   n = {
     -- disable default bindings
+    ["tn"] = { "<cmd>tabnew<cr>" },
+    ["tl"] = { "<cmd>tabnext<cr>" },
+    ["th"] = { "<cmd>tabprevious<cr>" },
+    ["tc"] = { "<cmd>tabclose<cr>" },
     ["<C-Down>"] = false,
     ["<C-Left>"] = false,
     ["<C-Right>"] = false,
