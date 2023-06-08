@@ -68,6 +68,9 @@ local mappings = {
     ["<leader>fp"] = { function() require("telescope").extensions.projects.projects {} end, desc = "Find projects" },
     ["<leader>fT"] = { "<cmd>TodoTelescope<cr>", desc = "Find TODOs" },
     -- octo plugin mappings
+    ["<leader>gh"] = { ":DiffviewFileHistory<cr>" },
+    ["<leader>gd"] = { ":DiffviewOpen<cr>" },
+    ["<leader>ge"] = { ":DiffviewClose<cr>" },
     ["<leader>G"] = { name = " GitHub" },
     ["<leader>Gi"] = { "<cmd>Octo issue list<cr>", desc = "Open Issues" },
     ["<leader>GI"] = { "<cmd>Octo issue search<cr>", desc = "Search Issues" },
@@ -159,6 +162,8 @@ local mappings = {
   v = {
     ["<leader>r"] = { "<Plug>Send", desc = "Send to REPL" },
     ["<leader>s"] = { function() require("spectre").open_visual() end, desc = "Spectre" },
+    ["<S-k>"] = { "<Esc>:m '<-2<CR>gv=gv" },
+    ["<S-j>"] = { "<Esc>:m '>+1<CR>gv=gv" },
   },
   i = {
     -- signature help, fails silently so attach always
