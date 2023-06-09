@@ -3,6 +3,10 @@ local astro_utils = require "astronvim.utils"
 local mappings = {
   n = {
     -- disable default bindings
+    --
+    ["Rr"] = "<Plug>RestNvim",
+    ["Rp"] = "<Plug>RestNvimPreview",
+    ["Rl"] = "<Plug>RestNvimLast",
     ["tn"] = { "<cmd>tabnew<cr>" },
     ["tl"] = { "<cmd>tabnext<cr>" },
     ["th"] = { "<cmd>tabprevious<cr>" },
@@ -68,7 +72,7 @@ local mappings = {
     ["<leader>fp"] = { function() require("telescope").extensions.projects.projects {} end, desc = "Find projects" },
     ["<leader>fT"] = { "<cmd>TodoTelescope<cr>", desc = "Find TODOs" },
     -- octo plugin mappings
-    ["<leader>gh"] = { ":DiffviewFileHistory<cr>" },
+    ["<leader>gh"] = { ":DiffviewFileHistory %<CR>" },
     ["<leader>gd"] = { ":DiffviewOpen<cr>" },
     ["<leader>ge"] = { ":DiffviewClose<cr>" },
     ["<leader>G"] = { name = " GitHub" },
@@ -164,6 +168,7 @@ local mappings = {
     ["<leader>s"] = { function() require("spectre").open_visual() end, desc = "Spectre" },
     ["<S-k>"] = { "<Esc>:m '<-2<CR>gv=gv" },
     ["<S-j>"] = { "<Esc>:m '>+1<CR>gv=gv" },
+    ["t"] = ":Tabularize /",
   },
   i = {
     -- signature help, fails silently so attach always

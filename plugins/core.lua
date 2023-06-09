@@ -39,7 +39,6 @@ return {
       source_selector = {
         sources = {
           { source = "filesystem", display_name = get_icon "FolderClosed" .. " File" },
-          { source = "remote", display_name = "󰒍 Remote" },
           { source = "git_status", display_name = get_icon "Git" .. " Git" },
         },
       },
@@ -51,4 +50,19 @@ return {
       },
     },
   },
+  {
+    "mattn/emmet-vim",
+  },
+  {
+    "othree/html5.vim",
+  },
+  {
+    "rest-nvim/rest.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
+  { "tpope/vim-surround" },
+  { "godlygeek/tabular", lazy = false },
+  { "tmhedberg/matchit" },
 }
