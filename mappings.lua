@@ -166,8 +166,8 @@ local mappings = {
   v = {
     ["<leader>r"] = { "<Plug>Send", desc = "Send to REPL" },
     ["<leader>s"] = { function() require("spectre").open_visual() end, desc = "Spectre" },
-    ["<S-k>"] = { "<Esc>:m '<-2<CR>gv=gv" },
-    ["<S-j>"] = { "<Esc>:m '>+1<CR>gv=gv" },
+    ["<S-k>"] = { ":move '<-2<CR>gv-gv" },
+    ["<S-j>"] = { ":move '>+1<CR>gv-gv" },
     ["t"] = ":Tabularize /",
   },
   i = {

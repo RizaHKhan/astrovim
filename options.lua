@@ -13,4 +13,5 @@ return {
   g = {
     resession_enabled = true,
   },
+  vim.opt.iskeyword:append { "-" },
 }
