@@ -52,6 +52,7 @@ return {
   },
   {
     "mattn/emmet-vim",
+    lazy = false,
   },
   {
     "othree/html5.vim",
