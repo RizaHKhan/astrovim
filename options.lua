@@ -14,6 +14,7 @@ return {
     resession_enabled = true,
     user_emmet_leader_key = ",",
     user_emmet_mode = "n",
+    mapleader = ",",
   },
   vim.opt.iskeyword:append { "-" },
 }
