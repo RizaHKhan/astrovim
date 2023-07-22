@@ -2,8 +2,8 @@ local utils = require "user.utils"
 local astro_utils = require "astronvim.utils"
 local mappings = {
   n = {
-    -- disable default bindings
-    --
+    ["gj"] = { function() require("gitsigns").next_hunk() end, desc = "Next Git hunk" },
+    ["gk"] = { function() require("gitsigns").prev_hunk() end, desc = "Previous Git hunk" },
     ["Rr"] = "<Plug>RestNvim",
     ["Rp"] = "<Plug>RestNvimPreview",
     ["Rl"] = "<Plug>RestNvimLast",
