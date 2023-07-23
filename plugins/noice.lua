@@ -15,7 +15,7 @@ return {
     "folke/noice.nvim",
     event = "VeryLazy",
     opts = {
-      cmdline = { view = "cmdline" },
+      cmdline = { view = "cmdline_popup" },
       messages = { view_search = false },
       lsp = {
         progress = { enabled = false },
