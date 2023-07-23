@@ -1,13 +1,7 @@
 return {
   {
-    "echasnovski/mini.move",
-    keys = {
-      { "<M-l>", mode = { "n", "v" } },
-      { "<M-k>", mode = { "n", "v" } },
-      { "<M-j>", mode = { "n", "v" } },
-      { "<M-h>", mode = { "n", "v" } },
-    },
-    opts = {},
+    "AstroNvim/astrocommunity",
+    { import = "astrocommunity.motion.mini-move" },
   },
   {
     "arsham/indent-tools.nvim",
