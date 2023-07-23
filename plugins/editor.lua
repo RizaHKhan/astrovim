@@ -1,9 +1,5 @@
 return {
   {
-    "AstroNvim/astrocommunity",
-    { import = "astrocommunity.motion.mini-move" },
-  },
-  {
     "arsham/indent-tools.nvim",
     dependencies = { "arsham/arshlib.nvim" },
     event = "User AstroFile",

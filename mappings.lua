@@ -166,6 +166,10 @@ local mappings = {
   v = {
     ["<leader>r"] = { "<Plug>Send", desc = "Send to REPL" },
     ["<leader>s"] = { function() require("spectre").open_visual() end, desc = "Spectre" },
+    ["<S-j>"] = { ":m '>+1<CR>gv=gv" },
+    ["<S-k>"] = { ":m '<-2<CR>gv=gv" },
+    ["<S-h>"] = { "<gv" },
+    ["<S-l>"] = { ">gv" },
     ["t"] = ":Tabularize /",
   },
   i = {
