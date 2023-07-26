@@ -59,12 +59,12 @@ return {
   },
   {
     "rest-nvim/rest.nvim",
-    lazy = false,
+    ft = 'http',
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
   },
-  { "tpope/vim-surround" },
+  { "tpope/vim-surround", lazy = false },
   { "godlygeek/tabular", lazy = false },
   { "tmhedberg/matchit" },
 }
