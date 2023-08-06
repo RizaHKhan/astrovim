@@ -15,6 +15,14 @@ local mappings = {
     ["<C-Up>"] = false,
     ["<C-q>"] = false,
     ["<C-s>"] = false,
+    ["<leader>bh"] = {
+      function() require("astronvim.utils.buffer").close_left() end,
+      desc = "Close all buffers to the left",
+    },
+    ["<leader>bl"] = {
+      function() require("astronvim.utils.buffer").close_right() end,
+      desc = "Close all buffers to the right",
+    },
     ["q:"] = ":",
     -- better buffer navigation
     ["]b"] = false,
@@ -76,8 +84,8 @@ local mappings = {
     ["gp"] = { function() require("gitsigns").preview_hunk() end, desc = "Preview Git hunk" },
     ["gj"] = { function() require("gitsigns").next_hunk() end, desc = "Next Git hunk" },
     ["gk"] = { function() require("gitsigns").prev_hunk() end, desc = "Previous Git hunk" },
-    ["gr"] = { function() require("gitsigns").reset_hunk() end, desc = "Reset Git hunk" },
-    ["gs"] = { function() require("gitsigns").stage_hunk() end, desc = "Stage Git hunk" },
+    ["<leader>gr"] = { function() require("gitsigns").reset_hunk() end, desc = "Reset Git hunk" },
+    ["<leader>gs"] = { function() require("gitsigns").stage_hunk() end, desc = "Stage Git hunk" },
     ["<leader>G"] = { name = " GitHub" },
     ["<leader>Gi"] = { "<cmd>Octo issue list<cr>", desc = "Open Issues" },
     ["<leader>GI"] = { "<cmd>Octo issue search<cr>", desc = "Search Issues" },
