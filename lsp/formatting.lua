@@ -1,5 +1,5 @@
 return {
-  format_on_save = true,
+  format_on_save = false,
   plugins = {
     {
       "jay-babu/mason-null-ls.nvim",

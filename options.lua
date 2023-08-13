@@ -17,4 +17,5 @@ return {
     mapleader = ",",
   },
   vim.opt.iskeyword:append { "-" },
+  vim.api.nvim_set_keymap("x", "p", "pgvy", { noremap = true }),
 }
