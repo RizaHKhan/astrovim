@@ -1,5 +1,11 @@
 local utils = require "user.utils"
 local astro_utils = require "astronvim.utils"
+
+function ConvertToHyphenatedLowercase()
+    vim.api.nvim_command([[silent! %s/\%V\s/-/g]])
+    vim.api.nvim_command([[silent! %s/\%V\(.*\)\-$/\L\1/]])
+end
+
 local mappings = {
   n = {
     ["Rr"] = "<Plug>RestNvim",
@@ -182,6 +188,7 @@ local mappings = {
     ["<S-h>"] = { "<gv" },
     ["<S-l>"] = { ">gv" },
     ["t"] = ":Tabularize /",
+    ["<leader>lc"] = { ":lua ConvertToHyphenatedLowercase()<CR>", noremap = true, silent = true},
   },
   i = {
     -- signature help, fails silently so attach always

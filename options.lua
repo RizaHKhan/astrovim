@@ -8,7 +8,7 @@ return {
     spellfile = vim.fn.expand "~/.config/nvim/lua/user/spell/en.utf-8.add",
     swapfile = false,
     thesaurus = vim.fn.expand "~/.config/nvim/lua/user/spell/mthesaur.txt",
-    wrap = true, -- soft wrap lines
+    wrap = false, -- soft wrap lines
   },
   g = {
     resession_enabled = true,
