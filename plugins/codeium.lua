@@ -2,7 +2,7 @@ return {
   "Exafunction/codeium.vim",
   cmd = "Codeium",
   init = function()
-    vim.g.codeium_enabled = 0
+    vim.g.codeium_enabled = 1
     vim.g.codeium_disable_bindings = 1
     vim.g.codeium_idle_delay = 1500
   end,
