@@ -9,6 +9,7 @@ return {
     swapfile = false,
     thesaurus = vim.fn.expand "~/.config/nvim/lua/user/spell/mthesaur.txt",
     wrap = false, -- soft wrap lines
+    relativenumber = false,
   },
   g = {
     resession_enabled = true,
