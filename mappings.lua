@@ -8,6 +8,7 @@ end
 
 local mappings = {
   n = {
+    ["Tf"] = "<cmd>TestFile<cr>",
     ["Rr"] = "<Plug>RestNvim",
     ["Rp"] = "<Plug>RestNvimPreview",
     ["Rl"] = "<Plug>RestNvimLast",
