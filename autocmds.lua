@@ -15,6 +15,12 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = 'go',
+  command = "setlocal tabstop=4 noexpandtab",
+})
+
+
 vim.api.nvim_create_autocmd("User", {
   desc = "Auto hide tabline",
   group = vim.api.nvim_create_augroup("autohide_tabline", { clear = true }),
