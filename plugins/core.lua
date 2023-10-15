@@ -48,5 +48,8 @@ return {
   { "tpope/vim-surround", lazy = false },
   { "godlygeek/tabular", lazy = false },
   { "tmhedberg/matchit" },
-  { "nvim-test", lazy = false }
+  { "nvim-test", lazy = false },
+  {
+    "ThePrimeagen/harpoon",
+  },
 }

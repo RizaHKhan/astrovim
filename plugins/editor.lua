@@ -49,9 +49,6 @@ return {
     },
   },
   {
-    "ThePrimeagen/harpoon",
-  },
-  {
     "nvim-pack/nvim-spectre",
     cmd = "Spectre",
     opts = function()
