@@ -70,12 +70,15 @@ local mappings = {
     -- vim-sandwich
     ["s"] = "<Nop>",
     ["<leader>n"] = { "<cmd>enew<cr>", desc = "New File" },
-    ["<leader>N"] = { "<cmd>tabnew<cr>", desc = "New Tab" },
     ["<leader><cr>"] = { '<esc>/<++><cr>"_c4l', desc = "Next Template" },
     ["<leader>."] = { "<cmd>cd %:p:h<cr>", desc = "Set CWD" },
+    -- harpoon
+    ["<leader>hh"] = { ":lua require('harpoon.ui').toggle_quick_menu() <CR>" },
+    ["<leader>hm"] = { ":lua require('harpoon.mark').add_file() <CR>" },
+    -- ["<leader>h"] = { ":lua require('harpoon.ui').toggle_quick_menu() <CR>" },
     -- neogen
     ["<leader>a"] = { desc = "󰏫 Annotate" },
-    ["<leader>a<cr>"] = { function() require("neogen").generate() end, desc = "Current" },
+    ["<leader>a<cr>"] = { function() require("neogen").generate({}) end, desc = "Current" },
     ["<leader>ac"] = { function() require("neogen").generate { type = "class" } end, desc = "Class" },
     ["<leader>af"] = { function() require("neogen").generate { type = "func" } end, desc = "Function" },
     ["<leader>at"] = { function() require("neogen").generate { type = "type" } end, desc = "Type" },
