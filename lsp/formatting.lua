@@ -1,5 +1,8 @@
 return {
   format_on_save = false,
+  disabled = {
+    "volar",
+  },
   plugins = {
     {
       "jay-babu/mason-null-ls.nvim",
@@ -33,6 +36,7 @@ return {
               condition = function(utils)
                 return utils.root_has_file "package.json"
                   or utils.root_has_file ".eslintrc.json"
+                  or utils.root_has_file ".eslintrc"
                   or utils.root_has_file ".eslintrc.js"
               end,
             })
