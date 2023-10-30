@@ -2,7 +2,8 @@ return {
   "catppuccin/nvim",
   name = "catppuccin",
   opts = {
-    dim_inactive = { enabled = true, percentage = 0.25 },
+    transparent_background = true,
+    dim_inactive = { enabled = false, percentage = 0.25 },
     integrations = {
       nvimtree = false,
       ts_rainbow = false,

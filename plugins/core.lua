@@ -40,7 +40,7 @@ return {
   },
   {
     "rest-nvim/rest.nvim",
-    ft = 'http',
+    ft = "http",
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
