@@ -11,6 +11,7 @@ return {
     wrap = false, -- soft wrap lines
     relativenumber = false,
     cursorline = false,
+    foldcolumn = "0",
   },
   g = {
     resession_enabled = true,
