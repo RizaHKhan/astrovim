@@ -2,8 +2,8 @@ local utils = require "user.utils"
 local astro_utils = require "astronvim.utils"
 
 function ConvertToHyphenatedLowercase()
-    vim.api.nvim_command([[silent! %s/\%V\s/-/g]])
-    vim.api.nvim_command([[silent! %s/\%V\(.*\)\-$/\L\1/]])
+  vim.api.nvim_command [[silent! %s/\%V\s/-/g]]
+  vim.api.nvim_command [[silent! %s/\%V\(.*\)\-$/\L\1/]]
 end
 
 local mappings = {
@@ -78,7 +78,7 @@ local mappings = {
     -- ["<leader>h"] = { ":lua require('harpoon.ui').toggle_quick_menu() <CR>" },
     -- neogen
     ["<leader>a"] = { desc = "󰏫 Annotate" },
-    ["<leader>a<cr>"] = { function() require("neogen").generate({}) end, desc = "Current" },
+    ["<leader>a<cr>"] = { function() require("neogen").generate {} end, desc = "Current" },
     ["<leader>ac"] = { function() require("neogen").generate { type = "class" } end, desc = "Class" },
     ["<leader>af"] = { function() require("neogen").generate { type = "func" } end, desc = "Function" },
     ["<leader>at"] = { function() require("neogen").generate { type = "type" } end, desc = "Type" },
@@ -178,7 +178,7 @@ local mappings = {
     ["<S-h>"] = { "<gv" },
     ["<S-l>"] = { ">gv" },
     ["t"] = ":Tabularize /",
-    ["<leader>lc"] = { ":lua ConvertToHyphenatedLowercase()<CR>", noremap = true, silent = true},
+    ["<leader>lc"] = { ":lua ConvertToHyphenatedLowercase()<CR>", noremap = true, silent = true },
   },
   i = {
     -- signature help, fails silently so attach always
