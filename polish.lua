@@ -1,7 +1,10 @@
 return function()
   local function yaml_ft(path, bufnr)
     -- get content of buffer as string
-    local content = vim.filetype.getlines(bufnr)
+    -- Uncomment below if on stable version of neovim
+    -- local content = vim.filetype.getlines(bufnr)
+    -- This is for the nightly version of neovim
+    local content = table.concat(vim.api.nvim_buf_get_lines(bufnr, 0, -1, false))
     if type(content) == "table" then content = table.concat(content, "\n") end
 
     -- check if file is in roles, tasks, or handlers folder
