@@ -1,5 +1,5 @@
 return {
-  { "rcarriga/nvim-notify", init = false, config = true },
+  { "rcarriga/nvim-notify", init = false, config = true, enabled = false },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
