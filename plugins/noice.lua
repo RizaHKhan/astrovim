@@ -2,6 +2,7 @@ return {
   { "rcarriga/nvim-notify", init = false, config = true, enabled = false },
   {
     "nvim-treesitter/nvim-treesitter",
+    dependencies = { "HiPhish/rainbow-delimiters.nvim" },
     opts = function(_, opts)
       if opts.ensure_installed ~= "all" then
         opts.ensure_installed = require("astronvim.utils").list_insert_unique(
@@ -9,6 +10,11 @@ return {
           { "bash", "markdown", "markdown_inline", "regex", "vim" }
         )
       end
+    end,
+    config = function()
+      rainbow = {
+        enable = false,
+      }
     end,
   },
   {
