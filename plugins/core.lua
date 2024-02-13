@@ -10,6 +10,7 @@ return {
   } },
   { "akinsho/toggleterm.nvim", opts = {
     terminal_mappings = false,
+    open_mapping = [[<C-\>]],
   } },
   { "rcarriga/nvim-notify", opts = {
     timeout = 0,
