@@ -50,7 +50,4 @@ return {
   { "godlygeek/tabular", lazy = false },
   { "tmhedberg/matchit" },
   { "nvim-test", lazy = false },
-  {
-    "ThePrimeagen/harpoon",
-  },
 }
