@@ -9,7 +9,10 @@ end
 local mappings = {
   n = {
     ["="] = "<cmd>Oil<cr>",
-    ["Tf"] = "<cmd>TestFile<cr>",
+    ["Tf"] = ":Neotest run file<cr>",
+    ["Tl"] = ":Neotest run last<cr>",
+    ["Ts"] = ":Neotest summary<cr>",
+    ["To"] = ":Neotest output<cr>",
     ["Rr"] = "<Plug>RestNvim",
     ["Rp"] = "<Plug>RestNvimPreview",
     ["Rl"] = "<Plug>RestNvimLast",
