@@ -8,6 +8,9 @@ return {
     "nvim-treesitter/nvim-treesitter",
     "marilari88/neotest-vitest",
     "nvim-neotest/neotest-jest",
+    "olimorris/neotest-phpunit",
+    "V13Axel/neotest-pest",
+    "nvim-neotest/neotest-go",
   },
   config = function()
     require("neotest").setup {
@@ -19,6 +22,9 @@ return {
           env = { CI = true },
           cwd = function(path) return vim.fn.getcwd() end,
         },
+        require "neotest-phpunit",
+        require "neotest-pest",
+        require "neotest-go",
       },
     }
   end,
