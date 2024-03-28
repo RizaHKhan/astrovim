@@ -128,21 +128,18 @@ return {
           enable = true,
           timeout = 750,
         },
-        ---Example:
-        ---
-        ---```lua
-        ---keybinds = {
-        ---  {
-        ---    "<localleader>rr", "<cmd>Rest run<cr>", "Run request under the cursor",
-        ---  },
-        ---  {
-        ---    "<localleader>rl", "<cmd>Rest run last<cr>", "Re-run latest request",
-        ---  },
-        ---}
-        ---
-        ---```
-        ---@see vim.keymap.set
-        keybinds = {},
+        keybinds = {
+          {
+            "<localleader>rr",
+            "<cmd>Rest run<cr>",
+            "Run request under the cursor",
+          },
+          {
+            "<localleader>rl",
+            "<cmd>Rest run last<cr>",
+            "Re-run latest request",
+          },
+        },
       }
     end,
   },
